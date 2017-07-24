@@ -23,12 +23,12 @@ namespace LINQedList
             // }
 
             //Which of the following numbers are multiples of 4 or 6
-            List<int> numbers = new List<int>()
-            {
-                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
-            };
+            // List<int> numbers = new List<int>()
+            // {
+            //     15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            // };
 
-            var fourSixMultiples = numbers.Where(num => num % 4 == 0 || num % 6 == 0).ToList();
+            // var fourSixMultiples = numbers.Where(num => num % 4 == 0 || num % 6 == 0).ToList();
 
             // foreach (var num in numbers)
             // {
@@ -56,7 +56,33 @@ namespace LINQedList
                 // List<int> numbers = new List<int>()
                 // {
                 //     15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+                // };
+
+                // var ascend = numbers.OrderBy(num => num);
+                // foreach (var num in ascend)
+                // {
+                //     Console.WriteLine(num);
                 // }
+
+                // Output how many numbers are in this list
+                // List<int> numbers = new List<int>()
+                // {
+                //     15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+                // };
+
+                // var count = numbers.Aggregate(0, (total, next) => next % 1 == 0 ? total + 1 : total);
+
+                // Console.WriteLine("The number of intergers is : {0}", count);
+
+                // How much money have we made?
+                List<double> purchases = new List<double>()
+                {
+                    2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
+                };
+
+                var total = purchases.Sum();
+
+                Console.WriteLine(total);
         }
     }
 }
